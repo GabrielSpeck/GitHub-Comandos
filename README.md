@@ -48,4 +48,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Para desfazer alterações sem ter dado commit, voltando ao commit anterior.
 ### git tag "nome"
 - Cria um checkpoint, uma versão no projeto.
-
+- git push "nome_repositório" "tag" para enviar a tag para o repertório remoto.
+- git push "nome_repositório" --tags para mandar todas as tags
