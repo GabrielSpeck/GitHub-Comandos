@@ -1,5 +1,14 @@
 # GitHub-Comandos
-Todos os comandos que eu acho útil para se usar no terminal.
+Aqui foi feito uma planilha sobre os estudos de git/github com a nomenclatura de cada comando essencial do git, ela não só vai te dar uma lista mas também vai lhe guiar ao decorrer do trabalho.
+
+## Start
+Começamos entre dois comandos: um para criar um repositório local do zero ou clonar um repertório remoto no GitHub.
+### git init
+- Criar repertório;
+### git clone <url>
+- Clonar repertório;
+
+
 
 ### git init
 - Usado para criar um novo repositório em relação ao diretório.
