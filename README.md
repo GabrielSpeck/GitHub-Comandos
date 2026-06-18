@@ -28,16 +28,12 @@ Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém �
 - O git add tem uso de encaminhar as alterações para o palco, o que vai permitir o uso do commit;
 - <nome_arquivo> para adicionar algum arquivo modificad específico;
 - . para adicionar todos os arquivos modificados;
-
-
-### git status
-- Realiza uma busca e análise dos eu projeto atual, dizendo se as alterações do seu código podem ser commitadas ou não.
-### git add
-- Permite você adicionar as mudanças em relação ao repositório local, permitindo você conseguit dar commit.
-- git add . permite você adicionar todos os arquivos de uma vez só.
 ### git commit -m "mensagem"
-- git commit serve para registrar as mudanças no repositório local.
-- -m "mensagem é para você atribuir o commit a um título. Organização.
+- O commit finalmente vai registrar as mudanças feitas no repositório local;
+- O commit vem com um ID único;
+- Caso erro na mensagem, se usa para editar o git commit --ammend -m "mensagem";
+
+
 ### git log
 - Mostrar o histórico dos commits ao longo do projeto.
 ### git push "nome_repositório" "branch"
@@ -49,8 +45,6 @@ Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém �
 ### git reset --hard "id_commit"
 - Serve para apagar o commit feito na máquina.
 - Precisa usar o ID anterior, ou o ID que você queira voltar. Nunca aquele que você quer realmente apagar.
-### git commit --ammend -m "mensagem"
-- Serve para editar o título de um commit caso já enviado.
 ### .gitignore
 - Para uma pasta ou arquivo não ser mostrado no github ao público, basta colocar os nomes da pasta o arquivo dentro do .gitignore.
 ### git diff --help
