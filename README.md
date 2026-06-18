@@ -30,3 +30,8 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Para uma pasta ou arquivo não ser mostrado no github ao público, basta colocar os nomes da pasta o arquivo dentro do .gitignore.
 ### git diff --help
 - Serve para comparar entre dois gits.
+### git branch
+- Mostra todas as ramificações do projeto.
+- git branch -D "nome_branch" para deletar uma ramificação.
+- git branch "nome_branch" para criar uma ramificação.
+- git switch "nome_branch" para se locomover entre as ramificações.
