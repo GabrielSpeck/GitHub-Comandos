@@ -21,3 +21,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Serve para atualizar o seu repositório local em relação ao repositório remoto se houve alguma alteração.
 ### git revert "id_commit"
 - Ao usar o git log, cada commit tem um ID único. Basta usar ele e o git revert para reverter um commit.
+### git reset --hard "id_commit"
+- Serve para apagar o commit feito na máquina.
