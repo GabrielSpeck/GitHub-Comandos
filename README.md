@@ -43,6 +43,8 @@ As vezes nós erramos ao fazer um commit, seja esquecer de algum código ou envi
 - Para usar esse comando, é necessário pegar o commit anterior da atual para apgar;
 ### git restore
 - Desfaz as alterações já adicionads mas ainda não commitadas;
+### git  pull <nome_repositório> <branch>
+- Pode ser usada para arrumar um problema de colaboração, quando alguém já commitou o mesmo arquivo ou na mesma branch que você. O que ela faz é atualizar o seu repositório local com as informações novas;
 ----
 E outras vezes queremos organizar o nosso trabalho, ou deixar para depois. Até mesmo deixar invisível alguns arquivos mais sensíveis do projeto;
 ### .gitignore
@@ -51,25 +53,19 @@ E outras vezes queremos organizar o nosso trabalho, ou deixar para depois. Até 
 - git diff <commit_1> <commit_2> tem o uso para comparar entre dois commits distintos;
 - git diff --staged tem o uso para comparar alterações já adicionadas;
 - git diff --cached tem o uso de mostrar as alterações que você já fez;
-
+# git stash
+- Você não consegue trabalhar em outra branch se não tiver feito o commit do arquivo alterado normalmente, mas com o git stash você pode guardar as alterações numa gaveta para depois;
+- git stash pop vairestaurar a modificação guardada;
+- git stash clear vai limpar a lista de modificações guardadas;
+- git stash push -m "mensagem" faz que ao invés de só guardar a alteração, você dê a ela um nome;
+----
 
 
 
 ### git push "nome_repositório" "branch"
 - Para enviar a alteração do repositório.
-### git pull "nome_repositório" "branch"
-- Serve para atualizar o seu repositório local em relação ao repositório remoto se houve alguma alteração.
 ### git merge "nome_branch"
 - Serve para mesclar uma ramificação com a main.
-### git rebase
-- Serve para atualizar o código da ramificação em relação a main.
-### git stash
-- Serve para guardar uma modificação sem criar uma commit.
-- git stash pop restaura a modificação guardada.
-- git stash clear para limpar a lista de modificações guardadas.
-- git stash push -m "mensagem" para atribuir uma nomenclatura específica para o stash.
-### git restore
-- Para desfazer alterações sem ter dado commit, voltando ao commit anterior.
 ### git tag "nome"
 - Cria um checkpoint, uma versão no projeto.
 - git push "nome_repositório" "tag" para enviar a tag para o repertório remoto.
