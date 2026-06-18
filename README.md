@@ -7,7 +7,7 @@ Começamos entre dois comandos: um para criar um repositório local do zero ou c
 - Criar repertório;
 ### git clone <url>
 - Clonar repertório;
---
+----
 Caso for um repertório criado na sua máquina, precisa conectar o repertório local ao remoto(GitHub) através de um único comando.
 ### git remote add <nome> <endereço_remote>
 - Normalmente nomeamos o repertório como origin, não algo obrigatório mas é uma boa prática.
