@@ -39,3 +39,8 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Serve para mesclar uma ramificação com a main.
 ### git rebase
 - Serve para atualizar o código da ramificação em relação a main.
+### git stash
+- Serve para guardar uma modificação sem criar uma commit.
+- git stash pop restaura a modificação guardada.
+- git stash clear para limpar a lista de modificações guardadas.
+- git stash push -m "mensagem" para atribuir uma nomenclatura específica para o stash.
