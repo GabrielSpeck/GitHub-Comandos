@@ -26,3 +26,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Precisa usar o ID anterior, ou o ID que você queira voltar. Nunca aquele que você quer realmente apagar.
 ### git commit --ammend -m "mensagem"
 - Serve para editar o título de um commit caso já enviado.
+### .gitignore
+- Para uma pasta ou arquivo não ser mostrado no github ao público, basta colocar os nomes da pasta o arquivo dentro do .gitignore.
