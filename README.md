@@ -31,7 +31,7 @@ Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém �
 ### git commit -m "mensagem"
 - O commit finalmente vai registrar as mudanças feitas no repositório local;
 - O commit vem com um ID único;
-- Caso erro na mensagem, se usa para editar o git commit --ammend -m "mensagem";
+- Caso erro na mensagem é usado o git commit --ammend -m "mensagem" para alterar o ÚLTIMO commit;
 
 
 ### git log
