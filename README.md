@@ -28,3 +28,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Serve para editar o título de um commit caso já enviado.
 ### .gitignore
 - Para uma pasta ou arquivo não ser mostrado no github ao público, basta colocar os nomes da pasta o arquivo dentro do .gitignore.
+### git diff --help
+- Serve para comparar entre dois gits.
