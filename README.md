@@ -66,7 +66,7 @@ E então chegamos ao fim deste guia, onde também significa o fim de um ciclo do
 - Você pega o commit que fez que envia diretamento para o repositório remoto;
 ### git merge <branch_nome>
 - Com esse comando você mescla duas ramificações, comumente a main com uma outra que tenha as atualizações para o projeto;
-# git rebase
+### git rebase
 - Ao invés de mesclar, criando uma nova commit que junta as duas branchs. O git rebase é a versão gourmet onde ao invés de mesclar ela move a ramificação dentro da main como uma continuação;
 - Esse comando tem a prática de deixar o histórico de commits mais limpo, muito utilizado pelas empresas. Outra dica é tomar cuidado com o git pull, ela pode acabar com o padrão da empresa(Verificar com o seu chefe qual padrão a empresa usa.);
 ----
