@@ -15,6 +15,7 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - -m "mensagem é para você atribuir o commit a um título. Organização.
 ### git log
 - Mostrar o histórico dos commits ao longo do projeto.
-### git push "apelido" "branch"
+### git push "nome_repositório" "branch"
 - Para enviar a alteração do repositório.
-- Apelido é o nome do repositório.
+### git pull "nome_repositório" "branch"
+- Serve para atualizar o seu repositório local em relação ao repositório remoto se houve alguma alteração.
