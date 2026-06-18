@@ -13,3 +13,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 ### git commit -m "mensagem"
 - git commit serve para dizer que sim, pode alterar o arquivo.
 - -m "mensagem é para você atribuir o commit a um título. Organização.
+### git log
+- Mostrar o histórico dos commits ao longo do projeto.
