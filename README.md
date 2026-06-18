@@ -19,3 +19,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Para enviar a alteração do repositório.
 ### git pull "nome_repositório" "branch"
 - Serve para atualizar o seu repositório local em relação ao repositório remoto se houve alguma alteração.
+### git revert "id_commit"
+- Ao usar o git log, cada commit tem um ID único. Basta usar ele e o git revert para reverter um commit.
