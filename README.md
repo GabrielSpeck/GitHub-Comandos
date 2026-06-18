@@ -7,6 +7,7 @@ Começamos entre dois comandos: um para criar um repositório local do zero ou c
 - Criar repertório;
 ### git clone <url>
 - Clonar repertório;
+-----------------------
 
 
 
