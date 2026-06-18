@@ -47,5 +47,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 ### git restore
 - Para desfazer alterações sem ter dado commit, voltando ao commit anterior.
 ### git tag "nome"
-- Cria um savepoint no projeto.
+- Cria um checkpoint, uma versão no projeto.
 
