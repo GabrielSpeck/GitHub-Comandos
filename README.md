@@ -46,3 +46,6 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - git stash push -m "mensagem" para atribuir uma nomenclatura específica para o stash.
 ### git restore
 - Para desfazer alterações sem ter dado commit, voltando ao commit anterior.
+### git tag "nome"
+- Cria um savepoint no projeto.
+
