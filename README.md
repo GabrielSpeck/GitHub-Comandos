@@ -35,3 +35,7 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - git branch -D "nome_branch" para deletar uma ramificação.
 - git branch "nome_branch" para criar uma ramificação.
 - git switch "nome_branch" para se locomover entre as ramificações.
+### git merge "nome_branch"
+- Serve para mesclar uma ramificação com a main.
+### git rebase
+- Serve para atualizar o código da ramificação em relação a main.
