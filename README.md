@@ -8,10 +8,10 @@ Todos os comandos que eu acho útil para se usar no terminal.
 ### git status
 - Realiza uma busca e análise dos eu projeto atual, dizendo se as alterações do seu código podem ser commitadas ou não.
 ### git add
-- Permite você adicionar um arquivo ou atualizar ele em relação ao repositório, permitindo você conseguit dar commit.
+- Permite você adicionar as mudanças em relação ao repositório local, permitindo você conseguit dar commit.
 - git add . permite você adicionar todos os arquivos de uma vez só.
 ### git commit -m "mensagem"
-- git commit serve para dizer que sim, pode alterar o arquivo no repositório local.
+- git commit serve para registrar as mudanças no repositório local.
 - -m "mensagem é para você atribuir o commit a um título. Organização.
 ### git log
 - Mostrar o histórico dos commits ao longo do projeto.
