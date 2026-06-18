@@ -23,3 +23,4 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - Ao usar o git log, cada commit tem um ID único. Basta usar ele e o git revert para reverter um commit.
 ### git reset --hard "id_commit"
 - Serve para apagar o commit feito na máquina.
+- Precisa usar o ID anterior, ou o ID que você queira voltar. Nunca aquele que você quer realmente apagar.
