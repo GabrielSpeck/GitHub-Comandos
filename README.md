@@ -32,23 +32,33 @@ Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém �
 - O commit finalmente vai registrar as mudanças feitas no repositório local;
 - O commit vem com um ID único;
 - Caso erro na mensagem é usado o git commit --ammend -m "mensagem" para alterar o ÚLTIMO commit;
-
-
 ### git log
-- Mostrar o histórico dos commits ao longo do projeto.
+- Ele mostra o histórico de commits e seus IDs;
+----
+As vezes nós erramos ao fazer um commit, seja esquecer de algum código ou enviar o commit sem querer. Mas está tudo bem, para isso temos duas opções.
+### git revert <ID_commit>
+- Esse comando reverte o commit feito, criando um commit em cima dele com a versão passada;
+### git reset --hard <ID_commit>
+- Esse comando você apaga o commit. É a forma mais radical de voltar para trás;
+- Para usar esse comando, é necessário pegar o commit anterior da atual para apgar;
+### git restore
+- Desfaz as alterações já adicionads mas ainda não commitadas;
+----
+E outras vezes queremos organizar o nosso trabalho, ou deixar para depois. Até mesmo deixar invisível alguns arquivos mais sensíveis do projeto;
+### .gitignore
+- Você cria ele como uma pasta dentro do diretório, e tudo que colocar nele vai ficar invisível no github para o público geral;
+### git diff
+- git diff <commit_1> <commit_2> tem o uso para comparar entre dois commits distintos;
+- git diff --staged tem o uso para comparar alterações já adicionadas;
+- git diff --cached tem o uso de mostrar as alterações que você já fez;
+
+
+
+
 ### git push "nome_repositório" "branch"
 - Para enviar a alteração do repositório.
 ### git pull "nome_repositório" "branch"
 - Serve para atualizar o seu repositório local em relação ao repositório remoto se houve alguma alteração.
-### git revert "id_commit"
-- Ao usar o git log, cada commit tem um ID único. Basta usar ele e o git revert para reverter um commit.
-### git reset --hard "id_commit"
-- Serve para apagar o commit feito na máquina.
-- Precisa usar o ID anterior, ou o ID que você queira voltar. Nunca aquele que você quer realmente apagar.
-### .gitignore
-- Para uma pasta ou arquivo não ser mostrado no github ao público, basta colocar os nomes da pasta o arquivo dentro do .gitignore.
-### git diff --help
-- Serve para comparar entre duas commits.
 ### git merge "nome_branch"
 - Serve para mesclar uma ramificação com a main.
 ### git rebase
