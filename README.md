@@ -43,8 +43,10 @@ As vezes nós erramos ao fazer um commit, seja esquecer de algum código ou envi
 - Para usar esse comando, é necessário pegar o commit anterior da atual para apgar;
 ### git restore
 - Desfaz as alterações já adicionads mas ainda não commitadas;
-### git  pull <nome_repositório> <branch>
-- Pode ser usada para arrumar um problema de colaboração, quando alguém já commitou o mesmo arquivo ou na mesma branch que você. O que ela faz é atualizar o seu repositório local com as informações novas;
+### git pull --rebase
+- Pode ser que outra pessoa esteja trabalhando na mesma branch que a sua, isso gera um conflito onde a máquina precisa colocar duas commits no mesmo lugar. Com o comando acima é resolvido por deixar a sua commit acima a da outra pessoa;
+- Caso não funcione pois as duas commits estejam dando erro, use o git pull --rebase abort para desfazer o pull rebase;
+- E então com o conflito e ter que usar o abort, é preciso usar o git pull;
 ----
 E outras vezes queremos organizar o nosso trabalho, ou deixar para depois. Até mesmo deixar invisível alguns arquivos mais sensíveis do projeto;
 ### .gitignore
@@ -53,21 +55,26 @@ E outras vezes queremos organizar o nosso trabalho, ou deixar para depois. Até 
 - git diff <commit_1> <commit_2> tem o uso para comparar entre dois commits distintos;
 - git diff --staged tem o uso para comparar alterações já adicionadas;
 - git diff --cached tem o uso de mostrar as alterações que você já fez;
-# git stash
+### git stash
 - Você não consegue trabalhar em outra branch se não tiver feito o commit do arquivo alterado normalmente, mas com o git stash você pode guardar as alterações numa gaveta para depois;
 - git stash pop vairestaurar a modificação guardada;
 - git stash clear vai limpar a lista de modificações guardadas;
 - git stash push -m "mensagem" faz que ao invés de só guardar a alteração, você dê a ela um nome;
+# Finish
+E então chegamos ao fim deste guia, onde também significa o fim de um ciclo do projeto seja ele completamente feito ou apenas uma atualização pronta para ser lançada.
+### git push <repertório_nome> <branch>
+- Você pega o commit que fez que envia diretamento para o repositório remoto;
+### git merge <branch_nome>
+- Com esse comando você mescla duas ramificações, comumente a main com uma outra que tenha as atualizações para o projeto;
+# git rebase
+- Ao invés de mesclar, criando uma nova commit que junta as duas branchs. O git rebase é a versão gourmet onde ao invés de mesclar ela move a ramificação dentro da main como uma continuação;
+- Esse comando tem a prática de deixar o histórico de commits mais limpo, muito utilizado pelas empresas. Outra dica é tomar cuidado com o git pull, ela pode acabar com o padrão da empresa(Verificar com o seu chefe qual padrão a empresa usa.);
 ----
+# git tag <nome>
+- Ele é usado para o pré-lançamento de uma versão, usando uma commit como referência, um checkpoint;
+- git push <nome_repositório> <tag> para enviar a tag para o repertório remoto;
+- git push "nome_repositório" --tags para mandar todas as tags;
+- git tag -a <nome> -m <mensagem> para adicionar o nome da tag e uma mensagem explicando o que a versão é;
 
-
-
-### git push "nome_repositório" "branch"
-- Para enviar a alteração do repositório.
-### git merge "nome_branch"
-- Serve para mesclar uma ramificação com a main.
-### git tag "nome"
-- Cria um checkpoint, uma versão no projeto.
-- git push "nome_repositório" "tag" para enviar a tag para o repertório remoto.
-- git push "nome_repositório" --tags para mandar todas as tags
-- git tag -a "nome" -m "mensagem"
+Muito obrigado por ler até o final!
+Créditos: Gabriel Del Sole Speck
