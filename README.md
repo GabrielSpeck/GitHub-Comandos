@@ -20,6 +20,15 @@ Primeiro vamos criar uma ramificação já que alterar os dados diretamente da m
 - git branch <nome_branch> você cria uma ramificação própria;
 - git switch <nome_branch> permite se locomover entre as ramificações;
 - git branch -D "nome_branch" para deletar uma ramificação;
+----
+Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém é preciso atualizar o repertório do que já foi feito que é a sessão dos commits.
+### git status
+- O git status vai realizar uma busca-análise do projeto, procurando pelos arquivos alterados que não foram postos no palco;
+### git add <nome_arquivo> (ou) .
+- O git add tem uso de encaminhar as alterações para o palco, o que vai permitir o uso do commit;
+- <nome_arquivo> para adicionar algum arquivo modificad específico;
+- . para adicionar todos os arquivos modificados;
+
 
 ### git status
 - Realiza uma busca e análise dos eu projeto atual, dizendo se as alterações do seu código podem ser commitadas ou não.
@@ -45,7 +54,7 @@ Primeiro vamos criar uma ramificação já que alterar os dados diretamente da m
 ### .gitignore
 - Para uma pasta ou arquivo não ser mostrado no github ao público, basta colocar os nomes da pasta o arquivo dentro do .gitignore.
 ### git diff --help
-- Serve para comparar entre dois gits.
+- Serve para comparar entre duas commits.
 ### git merge "nome_branch"
 - Serve para mesclar uma ramificação com a main.
 ### git rebase
