@@ -10,9 +10,16 @@ Começamos entre dois comandos: um para criar um repositório local do zero ou c
 ----
 Caso for um repertório criado na sua máquina, precisa conectar o repertório local ao remoto(GitHub) através de um único comando.
 ### git remote add <nome> <endereço_remote>
-- Normalmente nomeamos o repertório como origin, não algo obrigatório mas é uma boa prática.
-- O endereço_remote é a URL do repositório on-line no qual você queira conectar.
+- Normalmente nomeamos o repertório como origin, não algo obrigatório mas é uma boa prática;
+- O endereço_remote é a URL do repositório on-line no qual você queira conectar;
 ## Controlando as versões
+Agora que iniciamos o nosso projeto teremos alterações e iremos precisar salva-lás, organizar elas também. Mas primeiro vamos aprender a organizar elas através das boas práticas antes de tudo.
+Primeiro vamos criar uma ramificação já que alterar os dados diretamente da main é perigoso, com o risco de não poder ou aumentar a dificuldade para desfazer a modificação.
+### git branch
+- Ele mostra todas as ramificações criadas no repertório;
+- git branch <nome_branch> você cria uma ramificação própria;
+- git switch <nome_branch> permite se locomover entre as ramificações;
+- git branch -D "nome_branch" para deletar uma ramificação;
 
 ### git status
 - Realiza uma busca e análise dos eu projeto atual, dizendo se as alterações do seu código podem ser commitadas ou não.
@@ -39,11 +46,6 @@ Caso for um repertório criado na sua máquina, precisa conectar o repertório l
 - Para uma pasta ou arquivo não ser mostrado no github ao público, basta colocar os nomes da pasta o arquivo dentro do .gitignore.
 ### git diff --help
 - Serve para comparar entre dois gits.
-### git branch
-- Mostra todas as ramificações do projeto.
-- git branch -D "nome_branch" para deletar uma ramificação.
-- git branch "nome_branch" para criar uma ramificação.
-- git switch "nome_branch" para se locomover entre as ramificações.
 ### git merge "nome_branch"
 - Serve para mesclar uma ramificação com a main.
 ### git rebase
