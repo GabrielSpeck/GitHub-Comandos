@@ -44,3 +44,5 @@ Todos os comandos que eu acho útil para se usar no terminal.
 - git stash pop restaura a modificação guardada.
 - git stash clear para limpar a lista de modificações guardadas.
 - git stash push -m "mensagem" para atribuir uma nomenclatura específica para o stash.
+### git restore
+- Para desfazer alterações sem ter dado commit, voltando ao commit anterior.
