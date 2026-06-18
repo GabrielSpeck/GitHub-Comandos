@@ -12,8 +12,7 @@ Caso for um repertório criado na sua máquina, precisa conectar o repertório l
 ### git remote add <nome> <endereço_remote>
 - Normalmente nomeamos o repertório como origin, não algo obrigatório mas é uma boa prática.
 - O endereço_remote é a URL do repositório on-line no qual você queira conectar.
-
-
+## Controlando as versões
 
 ### git status
 - Realiza uma busca e análise dos eu projeto atual, dizendo se as alterações do seu código podem ser commitadas ou não.
