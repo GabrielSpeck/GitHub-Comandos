@@ -9,7 +9,7 @@ Começamos entre dois comandos: um para criar um repositório local do zero ou c
 - Clonar repertório;
 ----
 Caso for um repertório criado na sua máquina, precisa conectar o repertório local ao remoto(GitHub) através de um único comando.
-### git remote add <nome< <endereço_remote
+### git remote add <nome_repertório> <endereço_remote>
 - Normalmente nomeamos o repertório como origin, não algo obrigatório mas é uma boa prática;
 - O endereço_remote é a URL do repositório on-line no qual você queira conectar;
 ## Controlando as versões
@@ -24,7 +24,7 @@ Primeiro vamos criar uma ramificação já que alterar os dados diretamente da m
 Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém é preciso atualizar o repertório do que já foi feito que é a sessão dos commits.
 ### git status
 - O git status vai realizar uma busca-análise do projeto, procurando pelos arquivos alterados que não foram postos no palco;
-### git add <nome_arquivo (ou) .
+### git add <nome_arquivo> (ou) .
 - O git add tem uso de encaminhar as alterações para o palco, o que vai permitir o uso do commit;
 - <nome_arquivo> para adicionar algum arquivo modificad específico;
 - . para adicionar todos os arquivos modificados;
@@ -36,9 +36,9 @@ Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém �
 - Ele mostra o histórico de commits e seus IDs;
 ----
 As vezes nós erramos ao fazer um commit, seja esquecer de algum código ou enviar o commit sem querer. Mas está tudo bem, para isso temos duas opções.
-### git revert <ID_commit
+### git revert <ID_commit>
 - Esse comando reverte o commit feito, criando um commit em cima dele com a versão passada;
-### git reset --hard <ID_commit
+### git reset --hard <ID_commit>
 - Esse comando você apaga o commit. É a forma mais radical de voltar para trás;
 - Para usar esse comando, é necessário pegar o commit anterior da atual para apgar;
 ### git restore
@@ -52,7 +52,7 @@ E outras vezes queremos organizar o nosso trabalho, ou deixar para depois. Até 
 ### .gitignore
 - Você cria ele como uma pasta dentro do diretório, e tudo que colocar nele vai ficar invisível no github para o público geral;
 ### git diff
-- git diff <commit_1 <commit_2 tem o uso para comparar entre dois commits distintos;
+- git diff <commit_1> <commit_2> tem o uso para comparar entre dois commits distintos;
 - git diff --staged tem o uso para comparar alterações já adicionadas;
 - git diff --cached tem o uso de mostrar as alterações que você já fez;
 ### git stash
@@ -62,15 +62,15 @@ E outras vezes queremos organizar o nosso trabalho, ou deixar para depois. Até 
 - git stash push -m "mensagem" faz que ao invés de só guardar a alteração, você dê a ela um nome;
 # Finish
 E então chegamos ao fim deste guia, onde também significa o fim de um ciclo do projeto seja ele completamente feito ou apenas uma atualização pronta para ser lançada.
-### git push <repertório_nome <branch
+### git push <repertório_nome> <branch>
 - Você pega o commit que fez que envia diretamento para o repositório remoto;
-### git merge <branch_nome
+### git merge <branch_nome>
 - Com esse comando você mescla duas ramificações, comumente a main com uma outra que tenha as atualizações para o projeto;
 ### git rebase
 - Ao invés de mesclar, criando uma nova commit que junta as duas branchs. O git rebase é a versão gourmet onde ao invés de mesclar ela move a ramificação dentro da main como uma continuação;
 - Esse comando tem a prática de deixar o histórico de commits mais limpo, muito utilizado pelas empresas. Outra dica é tomar cuidado com o git pull, ela pode acabar com o padrão da empresa(Verificar com o seu chefe qual padrão a empresa usa.);
 ----
-# git tag <nome
+# git tag <tag_nome>
 - Ele é usado para o pré-lançamento de uma versão, usando uma commit como referência, um checkpoint;
 - git push <nome_repositório> <tag> para enviar a tag para o repertório remoto;
 - git push "nome_repositório" --tags para mandar todas as tags;
