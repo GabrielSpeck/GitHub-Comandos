@@ -9,7 +9,7 @@ Começamos entre dois comandos: um para criar um repositório local do zero ou c
 - Clonar repertório;
 ----
 Caso for um repertório criado na sua máquina, precisa conectar o repertório local ao remoto(GitHub) através de um único comando.
-### git remote add <nome <endereço_remote
+### git remote add <nome > <endereço_remote
 - Normalmente nomeamos o repertório como origin, não algo obrigatório mas é uma boa prática;
 - O endereço_remote é a URL do repositório on-line no qual você queira conectar;
 ## Controlando as versões
@@ -17,8 +17,8 @@ Agora que iniciamos o nosso projeto teremos alterações e iremos precisar salva
 Primeiro vamos criar uma ramificação já que alterar os dados diretamente da main é perigoso, com o risco de não poder ou aumentar a dificuldade para desfazer a modificação.
 ### git branch
 - Ele mostra todas as ramificações criadas no repertório;
-- git branch <nome_branch você cria uma ramificação própria;
-- git switch <nome_branch permite se locomover entre as ramificações;
+- git branch <nome_branch> você cria uma ramificação própria;
+- git switch <nome_branch> permite se locomover entre as ramificações;
 - git branch -D "nome_branch" para deletar uma ramificação;
 ----
 Ao concluir a função criada na branch, é hora de mesclar ela a main. Porém é preciso atualizar o repertório do que já foi feito que é a sessão dos commits.
